@@ -1,18 +1,36 @@
 <!DOCTYPE html>
-<html ng-app>
+<html ng-app="arteryWebApp">
 
 <head>
     <title>Artery Networking and Events</title>
+
+    <!-- Scripts -->
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0-rc.0/angular.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="css/site.css" />
+    <script type="text/javascript" src="js/main.js"></script>    
+
+    <!-- Fonts -->
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Merriweather:900,400,300,700" />
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato:400,700,900,300" />
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/site.css" />    
 </head>
 
-<body>
-    <h1>Artery Networking and Events</h1>
-    <label>Name:</label>
-    <input type="text" ng-model="yourName" placeholder="Enter a name here">
-    <hr>
-    <h1>Hello {{yourName}}!</h1>
+<body ng-controller="MainController">
+    <!-- Navbar -->
+    <nav class="navbar navbar-default navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <div class="navbar-brand">
+                    Artery Networking and Events
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Page Container -->
+    <div class="body-content" ng-include="templateUrl"></div>
 </body>
 
 </html>
