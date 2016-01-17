@@ -13,26 +13,22 @@
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato:400,700,900,300" />
 
     <!-- Stylesheets -->
-    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/site.css" />    
 </head>
 
 <body ng-controller="MainController">
+    
     <!-- Navbar -->
-    <nav class="navbar navbar-default navbar-inverse navbar-fixed-top">
+    <!--<nav>
         <div class="container">
-            <div class="navbar-header">
-                <div class="navbar-brand">
-                    Artery Networking and Events
-                </div>
-            </div>
+            Artery Networking and Events
         </div>
-    </nav>
+    </nav>-->
     
     <!-- Page Container -->
-    <div class="body-content">
-        <div class="container" ng-include="templateUrl"></div>
-    </div>
+    <article>
+        <div ng-include="templateUrl"></div>
+    </article>
 </body>
 
 </html>

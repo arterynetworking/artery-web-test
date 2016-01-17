@@ -1,0 +1,82 @@
+$dark: #000506;
+$mid: #D6CEB1;
+$light: #EFF6F5;
+
+$primary: #FF5F54;
+$secondary: #EFB77F;
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    color: $dark;
+    background: $light;
+}
+
+h1 {
+    font-family: 'Merriweather', serif;
+    margin: 0;
+}
+
+nav {
+    color: $light;
+    background: $dark;
+    padding: 8px 0;
+    margin: 0;
+    position: fixed;
+    width: 100%
+}
+
+article {
+    display: block;
+    padding: 0;
+    margin: 0;
+    width: 100%
+}
+
+.container {
+    width: 1150px;
+    margin: 0 auto;
+}
+
+.jumbotron {
+    height: calc(90vh - 70px);
+    color: $light;
+    padding: 35px;
+    background: $dark url("../images/networking.jpg") center center no-repeat;
+    background-size: cover; 
+}
+
+.jumbotron-inner {
+    width: calc(100% - 2px);
+    height: calc(100% - 2px);
+    border: 1px solid $light;
+}
+
+.date,
+.location {
+    
+}
+
+.button {
+    display: inline-block;
+    width: auto;
+    padding: 8px 12px;
+    color: $light;
+    background: $primary;
+    text-decoration: none;
+}
+
+.section {
+    height: calc(90vh - 70px);
+}
+
+.section.alt {
+    background: $mid;
+}
