@@ -5,26 +5,32 @@
     <title>Artery Networking and Events</title>
 
     <!-- Scripts -->
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0-rc.0/angular.min.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>    
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/1.0.3/ui-bootstrap.min.js"></script>    
+    <script type="text/javascript" src="https://api.tiles.mapbox.com/mapbox-gl-js/v0.12.3/mapbox-gl.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
 
     <!-- Fonts -->
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Merriweather:900,400,300,700" />
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato:400,700,900,300" />
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lora:400,700">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Montserrat:400,700" />
 
     <!-- Stylesheets -->
-    <link rel="stylesheet" type="text/css" href="css/site.css" />    
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css"/>    
+    <link rel="stylesheet" type="text/css" href="https://api.tiles.mapbox.com/mapbox-gl-js/v0.12.3/mapbox-gl.css"/>
+    <link rel="stylesheet" type="text/css" href="css/site.css" />
 </head>
 
 <body ng-controller="MainController">
-    
+
     <!-- Navbar -->
-    <!--<nav>
+    <nav class="navbar navbar-fixed-top">
         <div class="container">
-            Artery Networking and Events
+            <div class="navbar-brand">
+                Artery Networking and Events
+            </div>
         </div>
-    </nav>-->
-    
+    </nav>
+
     <!-- Page Container -->
     <article>
         <div ng-include="templateUrl"></div>

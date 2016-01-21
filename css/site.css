@@ -1,59 +1,138 @@
+/* Colors */
+/* Fonts */
+/* General */
 html,
 body {
+  font-size: 18px;
   padding: 0;
   margin: 0;
   width: 100%;
   height: 100%; }
 
 body {
-  font-family: 'Lato', sans-serif;
-  color: #000506;
-  background: #EFF6F5; }
+  font-family: "Lora", serif, sans-serif;
+  color: #404040; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400;
+  font-family: "Montserrat", serif, serif;
+  text-transform: uppercase;
+  margin: 1.5em 0; }
 
 h1 {
-  font-family: 'Merriweather', serif;
-  margin: 0; }
+  font-size: 1.5em; }
 
-nav {
-  color: #EFF6F5;
-  background: #000506;
+h2 {
+  font-size: 1.4em; }
+
+h3 {
+  font-size: 1.3em; }
+
+h4 {
+  font-size: 1.2em; }
+
+h5 {
+  font-size: 1.1em; }
+
+h6 {
+  font-size: 1em; }
+
+p {
+  line-height: 2em; }
+
+/* Navigation */
+.navbar {
+  color: #fefefe;
+  background: #101010;
   padding: 8px 0;
   margin: 0;
-  position: fixed;
-  width: 100%; }
+  height: auto;
+  min-height: auto; }
 
+/* Pages */
 article {
   display: block;
   padding: 0;
   margin: 0;
   width: 100%; }
 
-.container {
-  width: 1150px;
-  margin: 0 auto; }
+/* Buttons */
+.btn-xl {
+  font-size: 24px;
+  padding: 17px 45px;
+  margin: 15px 0; }
 
-.jumbotron {
-  height: calc(90vh - 70px);
-  color: #EFF6F5;
-  padding: 35px;
-  background: #000506 url("../images/networking.jpg") center center no-repeat;
+/* Equally sized sections */
+section {
+  height: calc(50vh);
+  min-height: 500px;
+  background: #fefefe;
+  text-align: center; }
+
+section.hero {
+  font-size: 2em;
+  color: #fefefe;
+  background: #404040 url("../images/networking.jpg") center center no-repeat;
   background-size: cover; }
 
-.jumbotron-inner {
-  width: calc(100% - 2px);
-  height: calc(100% - 2px);
-  border: 1px solid #EFF6F5; }
+section.hero h1 {
+  font-weight: 700; }
 
-.button {
-  display: inline-block;
-  width: auto;
-  padding: 8px 12px;
-  color: #EFF6F5;
-  background: #FF5F54;
-  text-decoration: none; }
+section:first-child,
+section:last-child {
+  height: calc(75vh); }
 
-.section {
-  height: calc(90vh - 70px); }
+section.alt {
+  background: #ece8e0; }
 
-.section.alt {
-  background: #D6CEB1; }
+section.alt h2 {
+  color: #b4966b; }
+
+/* Box for Vertical Align */
+.box-outer {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.box-inner {
+  width: 100%; }
+
+.container,
+.box-inner {
+  max-width: 1100px; }
+
+/* Drawcards */
+/* Mission Statement */
+ul.list-bubbles li {
+  border: 2px solid #ece8e0;
+  padding: 1em 1.5em;
+  margin: 1em 1.5em; }
+
+/* Map */
+.map,
+.map .box-inner {
+  width: 100%;
+  max-width: 100%; }
+
+.map .box-inner {
+  height: 100%; }
+
+.map h2 {
+  position: absolute;
+  width: 100%;
+  text-align: center; }
+
+.map iframe {
+  pointer-events: none; }
