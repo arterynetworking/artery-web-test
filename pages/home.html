@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <div ng-controller="HomeController">
 
     <!-- Hero Header -->
@@ -21,36 +20,42 @@
                 <div class="drawcards">
 
                     <div class="drawcard">
-                        <img />
+                        <div class="img-outer">
+                            <div class="img-inner" style="background-image: url('/images/networking.jpg')"></div>
+                        </div>
                         <div class="name">Stacey Green</div>
-                        <div class="">Trapeze</div>
                         <ul class="social">
-                            <li>
-                                <a>Facebook</a>
-                            </li>
+                            <li><a>Facebook</a></li>
+                            <li><a>Twitter</a></li>
+                            <li><a>Website</a></li>
                         </ul>
+                        <div class="about">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris aliquet turpis vel convallis aliquet. Donec at ligula auctor, commodo mi vitae, rutrum lectus.</div>
                     </div>
 
                     <div class="drawcard">
-                        <img />
-                        <div class="name">Stacey Green</div>
-                        <div class="">Trapeze</div>
+                        <div class="img-outer">
+                            <div class="img-inner" style="background-image: url('/images/networking.jpg')"></div>
+                        </div>
+                        <div class="name">Xavier Susai</div>
                         <ul class="social">
-                            <li>
-                                <a>Facebook</a>
-                            </li>
+                            <li><a>Facebook</a></li>
+                            <li><a>Twitter</a></li>
+                            <li><a>Website</a></li>
                         </ul>
+                        <div class="about">Mauris fermentum ante sed vestibulum consequat. Vivamus vitae neque sit amet nibh hendrerit tristique. Phasellus ut felis ullamcorper, semper lacus a, imperdiet justo.</div>
                     </div>
 
                     <div class="drawcard">
-                        <img />
-                        <div class="name">Stacey Green</div>
-                        <div class="">Trapeze</div>
+                        <div class="img-outer">
+                            <div class="img-inner" style="background-image: url('/images/networking.jpg')"></div>
+                        </div>
+                        <div class="name">Kevin Smith</div>
                         <ul class="social">
-                            <li>
-                                <a>Facebook</a>
-                            </li>
+                            <li><a>Facebook</a></li>
+                            <li><a>Twitter</a></li>
+                            <li><a>Website</a></li>
                         </ul>
+                        <div class="about">Sed vel orci luctus, sagittis erat sed, hendrerit metus. Nunc orci tortor, vulputate sed condimentum in, molestie vel lorem. Nullam congue porta lorem eget ultricies.</div>
                     </div>
                 </div>
             </div>
@@ -63,10 +68,13 @@
             <div class="box-inner">
                 <h2>About Artery</h2>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id efficitur dolor. Vestibulum nec fringilla orci, ut sollicitudin sapien. Donec in sollicitudin diam, at auctor risus. Phasellus interdum fermentum ex, ut euismod massa tempor convallis. In hac habitasse platea dictumst.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id efficitur dolor. Vestibulum nec fringilla orci, ut sollicitudin
+                    sapien. Donec in sollicitudin diam, at auctor risus. Phasellus interdum fermentum ex, ut euismod massa
+                    tempor convallis. In hac habitasse platea dictumst.
                 </p>
                 <p>
-                    Pellentesque sagittis magna ut sapien molestie viverra. Duis eleifend sollicitudin ipsum quis dapibus. Suspendisse mollis ornare consequat. In quis rhoncus purus.
+                    Pellentesque sagittis magna ut sapien molestie viverra. Duis eleifend sollicitudin ipsum quis dapibus. Suspendisse mollis
+                    ornare consequat. In quis rhoncus purus.
                 </p>
             </div>
         </div>
@@ -98,6 +106,20 @@
         <div class="box-outer">
             <div class="box-inner">
                 <h2>Tickets</h2>
+                <div class="stub">
+                    <div class="price">$100.00</div>
+                    <div class="price-information">price per person</div>                
+                    <a class="btn btn-primary btn-xl">
+                        Buy Ticket Now
+                    </a>
+                </div>
+                
+                <h3>Your ticket entitles you to:</h3>
+                <ul class="list-unstyled ticket-information">
+                    <li>Admission to a night of high-class networking and entertainment</li>
+                    <li>$25 food voucher</li>
+                    <li>Access to the open bar</li>
+                </ul>
             </div>
         </div>
     </section>
@@ -107,8 +129,7 @@
         <div class="box-outer">
             <div class="box-inner">
                 <h2>How To Get There</h2>
-                <!--<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3385.258300169077!2d115.84971831516131!3d-31.9538885812283!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2a32a52ad62182b1%3A0x519432eee539cb0e!2sRigby&#39;s!5e0!3m2!1sen!2sau!4v1453385153099" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>-->
-                <iframe src="https://api.mapbox.com/v4/mapbox.light.html?access_token=pk.eyJ1IjoibWFjY2EyODA1IiwiYSI6ImNpam9hbjczMjAwdGZ1Zm01OG9jZjFlaTUifQ.nYtuEEvTi2ggHi12N50uxA#17/-31.9518886/115.8497183" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3385.258300169077!2d115.84971831516131!3d-31.9538885812283!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2a32a52ad62182b1%3A0x519432eee539cb0e!2sRigby&#39;s!5e0!3m2!1sen!2sau!4v1453385153099" frameborder="0" style="border:0" allowfullscreen></iframe>
             </div>
         </div>
     </section>

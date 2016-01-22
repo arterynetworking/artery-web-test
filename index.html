@@ -6,28 +6,35 @@
 
     <!-- Scripts -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/1.0.3/ui-bootstrap.min.js"></script>    
-    <script type="text/javascript" src="https://api.tiles.mapbox.com/mapbox-gl-js/v0.12.3/mapbox-gl.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/1.0.3/ui-bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/controllers/global.js"></script>
+    <script type="text/javascript" src="js/controllers/main.js"></script>
+    <script type="text/javascript" src="js/controllers/home.js"></script>
 
     <!-- Fonts -->
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lora:400,700">
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Montserrat:400,700" />
 
     <!-- Stylesheets -->
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css"/>    
-    <link rel="stylesheet" type="text/css" href="https://api.tiles.mapbox.com/mapbox-gl-js/v0.12.3/mapbox-gl.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="https://api.tiles.mapbox.com/mapbox-gl-js/v0.12.3/mapbox-gl.css" />
     <link rel="stylesheet" type="text/css" href="css/site.css" />
 </head>
 
-<body ng-controller="MainController">
+<body ng-controller="MainController" scroll>
 
     <!-- Navbar -->
-    <nav class="navbar navbar-fixed-top">
+    <nav class="navbar navbar-fixed-top" ng-class="{ 'navbar-hide': hideNav }">
         <div class="container">
             <div class="navbar-brand">
-                Artery Networking and Events
+                Artery
             </div>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li><a>FAQs</a></li>
+                <li><a>Contact</a></li>
+            </ul>
         </div>
     </nav>
 
