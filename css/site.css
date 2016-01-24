@@ -1,5 +1,19 @@
 /* Colors */
 /* Fonts */
+body {
+  font-family: "Poly", serif; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.navbar-brand {
+  font-family: "Montserrat", serif;
+  text-transform: uppercase;
+  letter-spacing: 0.05em; }
+
 /* General */
 html,
 body {
@@ -11,21 +25,7 @@ body {
   height: 100%; }
 
 body {
-  font-family: "Lora", serif;
   color: #404040; }
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-.navbar-brand,
-.drawcard .name,
-.price-information {
-  font-family: "Montserrat", serif;
-  text-transform: uppercase;
-  letter-spacing: 0.05em; }
 
 h1,
 h2,
@@ -100,24 +100,13 @@ article {
 
 /* Equally sized sections */
 section {
-  height: calc(75vh);
-  min-height: 500px;
-  padding: 3em;
   background: #fefefe;
   text-align: center; }
 
-section.hero {
-  font-size: 2em;
-  color: #fefefe;
-  background: #404040 url("../images/networking.jpg") center center no-repeat;
-  background-size: cover; }
-
-section.hero h1 {
-  font-weight: 700; }
-
 section:first-child,
 section:last-child {
-  height: calc(90vh); }
+  color: #fefefe;
+  background: #101010; }
 
 section.alt {
   background: #ece8e0; }
@@ -139,11 +128,31 @@ section.alt h2 {
   justify-content: center; }
 
 .box-inner {
+  margin: 3em;
   width: 100%; }
 
 .container,
 .box-inner {
   max-width: 1100px; }
+
+/* Hero Section */
+section.hero {
+  background: url("../images/networking.jpg") center center no-repeat;
+  background-size: cover; }
+
+section.hero h1 {
+  border-top: 1px solid #fefefe;
+  border-bottom: 1px solid #fefefe;
+  font-size: 4em;
+  /* margin: 0.5em 0; */
+  width: auto;
+  padding: 0.2em;
+  display: inline-block; }
+
+section.hero h2 {
+  font-family: "Poly", serif;
+  text-transform: none;
+  font-style: italic; }
 
 /* Drawcards */
 .drawcards {
@@ -155,11 +164,14 @@ section.alt h2 {
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
-  align-items: top;
+  align-items: center;
   justify-content: center; }
 
 .drawcard {
+  border: 2px solid #ece8e0;
   padding: 1em;
+  margin: 0 0.5em;
+  background: #ffffff;
   width: 100%;
   height: 100%; }
 
@@ -189,6 +201,7 @@ section.alt h2 {
   padding: 0; }
 
 .drawcard ul.social {
+  margin: 1em 0;
   width: auto;
   list-style: none; }
 
@@ -202,14 +215,17 @@ section.alt h2 {
   padding: 15px; }
 
 /* Mission Statement */
+ul.list-bubbles {
+  margin: 2em 0; }
+
 ul.list-bubbles li {
-  border: 2px solid #ece8e0;
+  border: 2px solid #b4966b;
   padding: 1em 1.5em;
   margin: 1em 1.5em; }
 
 /* Tickets */
 .stub {
-  border: 2px solid #b4966b;
+  border: 2px solid #ece8e0;
   padding: 1em; }
 
 .price {
@@ -218,10 +234,14 @@ ul.list-bubbles li {
   font-weight: bold; }
 
 .price-information {
+  font-family: "Poly", serif;
+  font-style: italic;
   margin: 1em 0 0; }
 
-ul.ticket-information > li {
-  margin: 0.5em 0; }
+.ticket-information {
+  width: 100%;
+  max-width: 500px;
+  margin: 0.5em auto; }
 
 /* Map */
 .map,
@@ -236,3 +256,6 @@ ul.ticket-information > li {
   pointer-events: none;
   width: 100%;
   height: 50vh; }
+
+.map iframe.enable-pointer {
+  pointer-events: auto; }

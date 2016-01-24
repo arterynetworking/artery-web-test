@@ -11,8 +11,24 @@ $secondary: #FF5F54;
 
 /* Fonts */
 
-$font-body: "Lora", serif;
+$font-body: "Poly", serif;
 $font-heading: "Montserrat", serif;
+
+body {
+    font-family: $font-body;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.navbar-brand {
+    font-family: $font-heading;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
 
 /* General */
 
@@ -26,23 +42,8 @@ body {
     height: 100%;
 }
 
-body {
-    font-family: $font-body;
+body {    
     color: $dark;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-.navbar-brand,
-.drawcard .name,
-.price-information {
-    font-family: $font-heading;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
 }
 
 h1,
@@ -138,27 +139,14 @@ article {
 /* Equally sized sections */
 
 section {
-    height: calc(75vh);
-    min-height: 500px;
-    padding: 3em;
     background: $light;
     text-align: center;
 }
 
-section.hero {
-    font-size: 2em;
-    color: $light;
-    background: $dark url("../images/networking.jpg") center center no-repeat;
-    background-size: cover;
-}
-
-section.hero h1 {
-    font-weight: 700;
-}
-
 section:first-child,
 section:last-child {
-    height: calc(90vh);
+    color: $light;
+    background: $black;
 }
 
 section.alt {
@@ -185,12 +173,36 @@ section.alt h2 {
 }
 
 .box-inner {
+    margin: 3em;
     width: 100%;
 }
 
 .container,
 .box-inner {
     max-width: 1100px;
+}
+
+/* Hero Section */
+
+section.hero {
+    background: url("../images/networking.jpg") center center no-repeat;
+    background-size: cover;
+}
+
+section.hero h1 {
+    border-top: 1px solid #fefefe;
+    border-bottom: 1px solid #fefefe;
+    font-size: 4em;
+    /* margin: 0.5em 0; */
+    width: auto;
+    padding: 0.2em;
+    display: inline-block;
+}
+
+section.hero h2 {
+    font-family: $font-body;
+    text-transform: none;
+    font-style: italic;
 }
 
 /* Drawcards */
@@ -204,12 +216,15 @@ section.alt h2 {
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
-    align-items: top;
+    align-items: center;
     justify-content: center;
 }
 
 .drawcard {
+    border: 2px solid $mid;
     padding: 1em;
+    margin: 0 0.5em;
+    background: $white;
     width: 100%;
     height: 100%;
 }
@@ -245,6 +260,7 @@ section.alt h2 {
 }
 
 .drawcard ul.social {
+    margin: 1em 0;
     width: auto;
     list-style: none;
 }
@@ -262,8 +278,12 @@ section.alt h2 {
 
 /* Mission Statement */
 
+ul.list-bubbles {
+    margin: 2em 0;
+}
+
 ul.list-bubbles li {
-    border: 2px solid $mid;
+    border: 2px solid $primary;
     padding: 1em 1.5em;
     margin: 1em 1.5em;
 }
@@ -271,7 +291,7 @@ ul.list-bubbles li {
 /* Tickets */
 
 .stub {
-    border: 2px solid $primary;
+    border: 2px solid $mid;
     padding: 1em;
 }
 
@@ -282,11 +302,15 @@ ul.list-bubbles li {
 }
 
 .price-information {
+    font-family: $font-body;
+    font-style: italic;
     margin: 1em 0 0;
 }
 
-ul.ticket-information > li {
-    margin: 0.5em 0;
+.ticket-information {
+    width: 100%;
+    max-width: 500px;
+    margin: 0.5em auto;
 }
 
 /* Map */
@@ -301,8 +325,12 @@ ul.ticket-information > li {
     height: 100%;
 }
 
-.map iframe{
+.map iframe {
     pointer-events: none;
     width: 100%;
     height: 50vh;
+}
+
+.map iframe.enable-pointer {
+    pointer-events: auto;
 }
