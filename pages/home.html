@@ -4,13 +4,13 @@
     <section class="hero">
         <div class="box-outer">
             <div class="box-inner">
-                <h2>Atery Networking and Events presents:</h2>
-                <h1>Pilot Event</h1>
+                <h2>ARTery Networking and Events presents:</h2>
+                <h1>WholeheARTedly</h1>
                 <h2>
                     4th May 2016<br/>
                     Rigby's Bar and Bistro
                 </h2>
-                <a class="btn btn-primary btn-xl" href="#">
+                <a class="btn btn-primary btn-xl" ng-click="goToTickets()">
                     Get Tickets
                 </a>
             </div>
@@ -34,7 +34,8 @@
                             <li><a>Twitter</a></li>
                             <li><a>Website</a></li>
                         </ul>
-                        <div class="about">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris aliquet turpis vel convallis aliquet. Donec at ligula auctor, commodo mi vitae, rutrum lectus.</div>
+                        <div class="about">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris aliquet turpis vel convallis aliquet.
+                            Donec at ligula auctor, commodo mi vitae, rutrum lectus.</div>
                     </div>
 
                     <div class="drawcard">
@@ -47,7 +48,8 @@
                             <li><a>Twitter</a></li>
                             <li><a>Website</a></li>
                         </ul>
-                        <div class="about">Mauris fermentum ante sed vestibulum consequat. Vivamus vitae neque sit amet nibh hendrerit tristique. Phasellus ut felis ullamcorper, semper lacus a, imperdiet justo.</div>
+                        <div class="about">Mauris fermentum ante sed vestibulum consequat. Vivamus vitae neque sit amet nibh hendrerit tristique.
+                            Phasellus ut felis ullamcorper, semper lacus a, imperdiet justo.</div>
                     </div>
 
                     <div class="drawcard">
@@ -60,7 +62,8 @@
                             <li><a>Twitter</a></li>
                             <li><a>Website</a></li>
                         </ul>
-                        <div class="about">Sed vel orci luctus, sagittis erat sed, hendrerit metus. Nunc orci tortor, vulputate sed condimentum in, molestie vel lorem. Nullam congue porta lorem eget ultricies.</div>
+                        <div class="about">Sed vel orci luctus, sagittis erat sed, hendrerit metus. Nunc orci tortor, vulputate sed condimentum
+                            in, molestie vel lorem.</div>
                     </div>
                 </div>
             </div>
@@ -71,45 +74,62 @@
     <section class="alt">
         <div class="box-outer">
             <div class="box-inner">
-                <h2>About Artery</h2>
+                <h2>About The Event</h2>
+
+                <p class="mission-statement">
+                    Resuscitate your career and defibrillate your business; reconnect at ARTery. Be an integral part of our client’s journey
+                    by connecting them with future business opportunities and reinvigorating current business.
+                </p>
 
                 <ul class="list-inline list-unstyled list-bubbles">
-                    <li>Networking</li>
-                    <li>Synergy</li>
-                    <li>Events</li>
-                    <li>Connection</li>
-                    <li>Synergy</li>
+                    <li>Cocktail Style Event</li>
+                    <li>Local Art and Photography Exhibition</li>
+                    <li>Local Perth Performances</li>
+                    <li>Local Business Showcase</li>
+                    <li>Meet Fellow Professionals</li>
                 </ul>
-
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id efficitur dolor. Vestibulum nec fringilla orci, ut sollicitudin
-                    sapien. Donec in sollicitudin diam, at auctor risus. Phasellus interdum fermentum ex, ut euismod massa
-                    tempor convallis. In hac habitasse platea dictumst.
-                </p>
-                <p>
-                    Pellentesque sagittis magna ut sapien molestie viverra. Duis eleifend sollicitudin ipsum quis dapibus. Suspendisse mollis
-                    ornare consequat. In quis rhoncus purus.
-                </p>
             </div>
         </div>
     </section>
 
     <!-- Tickets -->
-    <section>
+    <section id="tickets">
         <div class="box-outer">
             <div class="box-inner">
                 <h2>Tickets</h2>
-                <div class="stub">
-                    <div class="price">$100.00</div>
-                    <div class="price-information">price per person</div>
+                <div class="tickets">
+                    <div class="ticket">
+                        
+                        <h3>Standard</h3>
+                        
+                        <div class="price">$100.00</div>
+                        <div class="price-information">price per person</div>
 
-                    <p class="ticket-information">
-                        Your ticket entitles you to a night of high-class networking and entertainment, a generous $25 food voucher and access to the open bar
-                    </p>
+                        <p class="ticket-information">
+                            Your ticket entitles you to a night of high-class networking and entertainment, a generous $25 food voucher and access to
+                            the open bar
+                        </p>
 
-                    <a class="btn btn-primary btn-xl">
-                        Buy Ticket Now
-                    </a>
+                        <a class="btn btn-default btn-lg">
+                            Buy Standard Ticket
+                        </a>
+                    </div>
+                    <div class="ticket vip">
+                        
+                        <h3>VIP</h3>
+                        
+                        <div class="price">$150.00</div>
+                        <div class="price-information">price per person</div>
+
+                        <p class="ticket-information">
+                            Your ticket entitles you to a night of high-class networking and entertainment, a generous $25 food voucher and access to
+                            the open bar
+                        </p>
+
+                        <a class="btn btn-primary btn-xl">
+                            Buy VIP Ticket
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -120,7 +140,8 @@
         <div class="box-outer">
             <div class="box-inner">
                 <h2>How To Get There</h2>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3385.258300169077!2d115.84971831516131!3d-31.9538885812283!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2a32a52ad62182b1%3A0x519432eee539cb0e!2sRigby&#39;s!5e0!3m2!1sen!2sau!4v1453385153099" frameborder="0" style="border:0" allowfullscreen></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3385.258300169077!2d115.84971831516131!3d-31.9538885812283!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2a32a52ad62182b1%3A0x519432eee539cb0e!2sRigby&#39;s!5e0!3m2!1sen!2sau!4v1453385153099"
+                frameborder="0" style="border:0" allowfullscreen></iframe>
             </div>
         </div>
     </section>
