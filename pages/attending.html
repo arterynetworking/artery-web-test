@@ -1,5 +1,17 @@
-<div class="page container">
-    <h1>Search Attendees</h1>
-    <input class="form-control input-lg" type="search" placeholder="Search by name..."/>
-    
+<div class="page container" ng-controller="AttendingController">
+    <h1>Who's Attending</h1>
+    <input class="form-control input-lg" type="search" placeholder="Search by name..." ng-model="searchText" />
+
+    <div class="row attendees">
+        <div class="col-xs-12 col-sm-6" ng-repeat="a in attendees | filter: searchText">
+            <div class="attendee-card">
+                <div class="img-outer">
+                    <div class="img-inner" style="background-image: url('./images/networking.jpg')"></div>
+                </div>
+                <p class="name">{{a.name}}</p>
+                <p class="occupation">{{a.occupation}}</p>
+                <p class="bio">{{a.bio}}</p>
+            </div>
+        </div>
+    </div>
 </div>

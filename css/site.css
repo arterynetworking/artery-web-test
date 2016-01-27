@@ -10,8 +10,7 @@ h2,
 h3,
 h4,
 h5,
-h6,
-.navbar-brand {
+h6 {
   font-family: "Montserrat", serif;
   text-transform: uppercase;
   letter-spacing: 0.05em; }
@@ -93,7 +92,7 @@ a {
   position: fixed;
   z-index: 2500;
   background: #ffffff url("../images/loading.gif") center center no-repeat;
-  opacity: 0.5;
+  opacity: 1;
   width: 100%;
   height: 100%; }
 
@@ -115,7 +114,9 @@ a {
 .navbar .navbar-brand {
   text-align: left;
   text-transform: uppercase;
-  font-size: 1.6em; }
+  font-size: 1.6em;
+  font-family: "Montserrat", serif;
+  letter-spacing: 0.05em; }
 
 .navbar .navbar-brand a {
   text-decoration: none;
@@ -160,6 +161,9 @@ section {
 footer {
   color: #fefefe;
   background: #404040; }
+
+footer ul > li {
+  margin: 0.4em 0; }
 
 footer a,
 footer a:hover {
@@ -357,3 +361,38 @@ ul.list-bubbles li {
 
 .map iframe.enable-pointer {
   pointer-events: auto; }
+
+/* Attendees */
+.attendee-card {
+  background: #ffffff;
+  height: 250px;
+  margin-top: 30px;
+  padding: 1em;
+  overflow-y: hidden;
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.16), 0 2px 5px 0 rgba(0, 0, 0, 0.26); }
+
+.attendee-card .img-outer {
+  float: right;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #ece8e0; }
+
+.attendee-card .img-outer .img-inner {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-size: cover; }
+
+.attendee-card .name,
+.attendee-card .occupation,
+.attendee-card .bio {
+  margin: 0.5em 0; }
+
+.attendee-card .name {
+  font-size: 1.4em;
+  font-family: "Montserrat", serif;
+  text-transform: uppercase; }
+
+.attendee-card .occupation {
+  font-style: italic; }
