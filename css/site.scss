@@ -214,7 +214,8 @@ section {
 
 footer { 
     color: $light;
-    background: $dark;
+    background: $dark url('../images/footer.jpg') center center no-repeat;
+    background-size: cover;
 }
 
 footer ul > li {
@@ -271,24 +272,26 @@ section.alt h2 {
 /* Hero Section */
 
 section.hero {
-    background: url("../images/networking.jpg") center center no-repeat;
+    background: $dark url("../images/heart-ribbon.png") center center no-repeat;
     background-size: cover;
+    height: 100%;
+    padding: 1em;
 }
 
 section.hero h1 {
-    border-top: 1px solid #fefefe;
-    border-bottom: 1px solid #fefefe;
     font-size: 4em;
-    /* margin: 0.5em 0; */
     width: auto;
-    padding: 0.2em;
+    max-height: 90%;
+    margin: 2em 0;
     display: inline-block;
+    text-transform: none;
 }
 
 section.hero h2 {
     font-family: $font-body;
     text-transform: none;
     font-style: italic;
+    line-height: 2em;
 }
 
 /* Drawcards */
@@ -407,13 +410,12 @@ ul.list-bubbles li {
 .ticket {
     background: $light;
     padding: 1em;
-    margin: 0 0.5em;
+    margin: 0;
     box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.16), 0 2px 5px 0 rgba(0, 0, 0, 0.26);
 }
 
 .ticket.vip {
     z-index: 100;
-    margin-left: -0.5em;
     font-size: 1.25em;
     line-height: 1.6em;
     box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19), 0 8px 17px 0 rgba(0, 0, 0, 0.2);
