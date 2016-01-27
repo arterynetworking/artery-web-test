@@ -14,6 +14,11 @@ $secondary: #101010;
 $font-body: "Poly", serif;
 $font-heading: "Montserrat", serif;
 
+/* Other constants */
+
+$footer-height: 350px;
+$footer-height-negative: -350px;
+
 body {
     font-family: $font-body;
 }
@@ -45,6 +50,29 @@ body {
 body {    
     color: $dark;
     overflow-y: scroll;
+}
+
+.page {
+    padding-top: 65px;
+}
+
+article {
+    display: block;
+    padding: 0;
+    margin: 0;
+    margin-bottom: $footer-height-negative;
+    width: 100%;
+    min-height: 100%;
+}
+
+article:after, {
+  content: "";
+  display: block;
+}
+
+article:after,
+footer {
+  height: $footer-height;
 }
 
 h1,
@@ -125,19 +153,6 @@ a {
     color: $primary;
 }
 
-/* Pages */
-
-.page {
-    padding-top: 65px;
-}
-
-article {
-    display: block;
-    padding: 0;
-    margin: 0;
-    width: 100%;
-}
-
 /* Buttons */
 
 .btn {    
@@ -166,9 +181,18 @@ article {
 
 /* Equally sized sections */
 
+section,
+footer {
+    text-align: center;
+}
+
 section {
     background: $light;
-    text-align: center;
+}
+
+footer { 
+    color: $light;
+    background: $dark;
 }
 
 section:first-child,

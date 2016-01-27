@@ -1,5 +1,6 @@
 /* Colors */
 /* Fonts */
+/* Other constants */
 body {
   font-family: "Poly", serif; }
 
@@ -27,6 +28,25 @@ body {
 body {
   color: #404040;
   overflow-y: scroll; }
+
+.page {
+  padding-top: 65px; }
+
+article {
+  display: block;
+  padding: 0;
+  margin: 0;
+  margin-bottom: -350px;
+  width: 100%;
+  min-height: 100%; }
+
+article:after {
+  content: "";
+  display: block; }
+
+article:after,
+footer {
+  height: 350px; }
 
 h1,
 h2,
@@ -90,16 +110,6 @@ a {
   background: none;
   color: #b4966b; }
 
-/* Pages */
-.page {
-  padding-top: 65px; }
-
-article {
-  display: block;
-  padding: 0;
-  margin: 0;
-  width: 100%; }
-
 /* Buttons */
 .btn {
   font-family: "Montserrat", serif;
@@ -122,9 +132,16 @@ article {
   padding: 17px 45px; }
 
 /* Equally sized sections */
-section {
-  background: #fefefe;
+section,
+footer {
   text-align: center; }
+
+section {
+  background: #fefefe; }
+
+footer {
+  color: #fefefe;
+  background: #404040; }
 
 section:first-child,
 section:last-child {
