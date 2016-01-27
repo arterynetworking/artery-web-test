@@ -25,7 +25,8 @@ body {
   height: 100%; }
 
 body {
-  color: #404040; }
+  color: #404040;
+  overflow-y: scroll; }
 
 h1,
 h2,
@@ -78,6 +79,10 @@ a {
   text-transform: uppercase;
   font-size: 1.6em; }
 
+.navbar .navbar-brand a {
+  text-decoration: none;
+  color: #fefefe; }
+
 .navbar .navbar-nav > li > a {
   color: #fefefe; }
 
@@ -86,6 +91,9 @@ a {
   color: #b4966b; }
 
 /* Pages */
+.page {
+  padding-top: 65px; }
+
 article {
   display: block;
   padding: 0;
@@ -100,14 +108,14 @@ article {
 
 .btn-primary {
   color: #fefefe;
-  background: #FF5F54;
-  border-color: #d40e00; }
+  background: #101010;
+  border-color: black; }
 
 .btn-primary:hover,
 .btn-primary:focus,
 .btn-primary:active {
-  background: #d40e00;
-  border-color: #540500; }
+  background: black;
+  border-color: black; }
 
 .btn-xl {
   font-size: 24px;
@@ -171,6 +179,7 @@ section.hero h2 {
 
 /* Drawcards */
 .drawcards {
+  margin-bottom: 2em;
   width: 100%;
   height: 100%;
   padding: 0;

@@ -28,12 +28,12 @@
     <nav class="navbar navbar-fixed-top" ng-class="{ 'navbar-hide': hideNav }">
         <div class="container">
             <div class="navbar-brand">
-                Artery
+                <a ng-click="goToPage('/home')">Artery</a>
             </div>
 
             <ul class="nav navbar-nav navbar-right">
-                <li><a>FAQs</a></li>
-                <li><a>Contact</a></li>
+                <li><a ng-click="goToPage('/faq')">FAQs</a></li>
+                <li><a ng-click="goToPage('/contact')">Contact</a></li>
             </ul>
         </div>
     </nav>
