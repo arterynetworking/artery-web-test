@@ -23,6 +23,9 @@
 </head>
 
 <body ng-controller="MainController" scroll>
+    
+    <!-- Loading Overlay -->
+    <div class="loading-overlay" ng-show="isLoading"></div>
 
     <!-- Navbar -->
     <nav class="navbar navbar-fixed-top" ng-class="{ 'navbar-hide': hideNav }">
@@ -41,15 +44,39 @@
     <!-- Page Container -->
     <article>
         <div ng-include="templateUrl"></div>
-
     </article>
-    
+
     <!-- Footer -->
     <footer>
-        <div class="box-outer">
-            <div class="box-inner">
-                <h2>Footer</h2>
+        <div class="container">
+            <div class="box-outer">
+                <div class="box-inner">
+                    <h3>About ARTery</h3>
+                    <p>
+                        An innovative Perth based networking and events group that encourage the discovery of not only the brand, but the person
+                        and face behind that.
+                    </p>
+                </div>
+                <div class="box-inner">
+                    <h3>Helpful Links</h3>
+                    <ul class="list-unstyled">
+                        <li><a ng-click="goToPage('/faq')">Frequently Asked Questions</a></li>
+                        <li><a ng-click="goToPage('/privacy')">Privacy Statement</a></li>
+                        <li><a ng-click="goToPage('/about')">About ARTery</a></li>
+                        <li><a ng-click="goToPage('/contact')">Contact ARTery</a></li>
+                    </ul>
+                </div>
+                <div class="box-inner">
+                    <h3>Social Media</h3>
+                    <ul class="list-unstyled">
+                        <li><a>Follow on Facebook</a></li>
+                        <li><a>Follow on Twitter</a></li>
+                        <li><a>Follow on Instagram</a></li>
+                        <li><a>Contact via Email</a></li>
+                    </ul>
+                </div>
             </div>
+            <p>&copy; 2016 - ARTery Networking and Events</p>
         </div>
     </footer>
 </body>

@@ -16,8 +16,10 @@ $font-heading: "Montserrat", serif;
 
 /* Other constants */
 
-$footer-height: 350px;
-$footer-height-negative: -350px;
+$footer-height: 475px;
+$footer-height-negative: -475px;
+
+/* General */
 
 body {
     font-family: $font-body;
@@ -34,8 +36,6 @@ h6,
     text-transform: uppercase;
     letter-spacing: 0.05em;
 }
-
-/* General */
 
 html,
 body {
@@ -54,6 +54,7 @@ body {
 
 .page {
     padding-top: 65px;
+    padding-bottom: 65px;
 }
 
 article {
@@ -83,7 +84,6 @@ h5,
 h6 {
     font-weight: 400;
     text-transform: uppercase;
-    margin: 1.5em 0;
 }
 
 h1 {
@@ -110,8 +110,29 @@ h6 {
     font-size: 1em;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 1.5em 0;
+}
+
 a {
     cursor: pointer;
+}
+
+/* Loading overlay */
+
+.loading-overlay {
+    position: fixed;
+    z-index: 2500;
+    background: $white url('../images/loading.gif') center center no-repeat;
+    opacity: 1;
+    width: 100%;
+    height: 100%;
 }
 
 /* Navigation */
@@ -195,6 +216,14 @@ footer {
     background: $dark;
 }
 
+footer a,
+footer a:hover {
+    color: $light;
+    border-bottom: 1px solid;
+    padding-bottom: 0.15em;
+    text-decoration: none;
+}
+
 section:first-child,
 section:last-child {
     color: $light;
@@ -220,7 +249,7 @@ section.alt h2 {
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
-    align-items: center;
+    align-items: top;
     justify-content: center;
 }
 

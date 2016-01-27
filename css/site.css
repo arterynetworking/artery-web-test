@@ -1,6 +1,7 @@
 /* Colors */
 /* Fonts */
 /* Other constants */
+/* General */
 body {
   font-family: "Poly", serif; }
 
@@ -15,7 +16,6 @@ h6,
   text-transform: uppercase;
   letter-spacing: 0.05em; }
 
-/* General */
 html,
 body {
   font-size: 18px;
@@ -30,13 +30,14 @@ body {
   overflow-y: scroll; }
 
 .page {
-  padding-top: 65px; }
+  padding-top: 65px;
+  padding-bottom: 65px; }
 
 article {
   display: block;
   padding: 0;
   margin: 0;
-  margin-bottom: -350px;
+  margin-bottom: -475px;
   width: 100%;
   min-height: 100%; }
 
@@ -46,7 +47,7 @@ article:after {
 
 article:after,
 footer {
-  height: 350px; }
+  height: 475px; }
 
 h1,
 h2,
@@ -55,8 +56,7 @@ h4,
 h5,
 h6 {
   font-weight: 400;
-  text-transform: uppercase;
-  margin: 1.5em 0; }
+  text-transform: uppercase; }
 
 h1 {
   font-size: 1.5em; }
@@ -76,8 +76,26 @@ h5 {
 h6 {
   font-size: 1em; }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 1.5em 0; }
+
 a {
   cursor: pointer; }
+
+/* Loading overlay */
+.loading-overlay {
+  position: fixed;
+  z-index: 2500;
+  background: #ffffff url("../images/loading.gif") center center no-repeat;
+  opacity: 0.5;
+  width: 100%;
+  height: 100%; }
 
 /* Navigation */
 .navbar,
@@ -143,6 +161,13 @@ footer {
   color: #fefefe;
   background: #404040; }
 
+footer a,
+footer a:hover {
+  color: #fefefe;
+  border-bottom: 1px solid;
+  padding-bottom: 0.15em;
+  text-decoration: none; }
+
 section:first-child,
 section:last-child {
   color: #fefefe;
@@ -164,7 +189,7 @@ section.alt h2 {
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
-  align-items: center;
+  align-items: top;
   justify-content: center; }
 
 .box-inner {

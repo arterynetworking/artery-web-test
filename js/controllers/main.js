@@ -5,12 +5,15 @@ app.controller("MainController", ["$scope", "$window", "$location",
         $scope.defaultPage = "pages/home.html"
         $scope.templateUrl = null;
         $scope.hideNav = true;
+        $scope.isLoading = false;
 
         $scope.goToPage = function (pageName) {
-
+            
             $location.url(pageName);
             $scope.templateUrl = "pages" + pageName + ".html";
             $scope.scrollPageEvent();
+            
+            $scope.$apply();
         }
         
         $scope.loadPageEvent = function () {
@@ -20,7 +23,6 @@ app.controller("MainController", ["$scope", "$window", "$location",
             } else {
                 $scope.templateUrl = $scope.defaultPage;
             }
-
             $scope.scrollPageEvent();
         }
         
@@ -35,7 +37,7 @@ app.controller("MainController", ["$scope", "$window", "$location",
                     $scope.hideNav = true;
                 }
             }
-
+            
             $scope.$apply();
         }
 
