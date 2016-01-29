@@ -1,13 +1,14 @@
 /* Colors */
 
 $black: #101010;
-$dark: #404040;
-$mid: #ece8e0;
+$dark: #303030;
 $light: #fefefe;
 $white: #ffffff;
 
 $primary: #b4966b;
-$secondary: #101010;
+$mid: #ece8e0;
+$secondary: #01579B;
+$tertiary: #C62828;
 
 /* Fonts */
 
@@ -149,13 +150,8 @@ a {
     height: 65px;
 }
 
-.navbar.navbar-hide {
-    transform: translateY(-65px);
-}
-
 .navbar .navbar-brand {
     text-align: left;
-    text-transform: uppercase;
     font-size: 1.6em;
     font-family: $font-heading;
     letter-spacing: 0.05em;
@@ -180,20 +176,24 @@ a {
 .btn {    
     font-family: $font-heading;
     text-transform: uppercase;
-    border-radius: 0;
+    border-radius: 16px;
+    border-width: 3px;
 }
 
 .btn-primary {
-    color: $light;
+    color: $white;
     background: $secondary;
-    border-color: darken($secondary, 25%);
+    border-color: darken($secondary, 10%);
 }
 
 .btn-primary:hover,
 .btn-primary:focus,
-.btn-primary:active {
-    background: darken($secondary, 25%);
-    border-color: darken($secondary, 50%);
+.btn-primary:active,
+.btn-primary:active:focus,
+.btn-primary:active:hover {
+    background: darken($secondary, 10%);
+    border-color: darken($secondary, 20%);
+    box-shadow: none;
 }
 
 .btn-xl {
@@ -272,26 +272,36 @@ section.alt h2 {
 /* Hero Section */
 
 section.hero {
-    background: $dark url("../images/heart-ribbon.png") center center no-repeat;
+    background: $secondary url("../images/networking.jpg") center center no-repeat;
     background-size: cover;
     height: 100%;
-    padding: 1em;
+    padding: 2em;
+}
+
+section.hero h1,
+section.hero h2 {
+    font-family: $font-body;
+    text-shadow: 0 6px 20px #000;
 }
 
 section.hero h1 {
     font-size: 4em;
     width: auto;
     max-height: 90%;
-    margin: 2em 0;
+    margin: 4em 0 0;
     display: inline-block;
     text-transform: none;
+    font-weight: 800;
+}
+
+section.hero h1 .highlight {
+    color: $tertiary;
 }
 
 section.hero h2 {
-    font-family: $font-body;
     text-transform: none;
-    font-style: italic;
     line-height: 2em;
+    font-weight: 400;
 }
 
 /* Drawcards */
@@ -387,7 +397,8 @@ ul.list-bubbles {
 }
 
 ul.list-bubbles li {
-    border: 2px solid $primary;
+    background: $primary;
+    color: $white;
     padding: 1em 1.5em;
     margin: 1em 1.5em;
 }

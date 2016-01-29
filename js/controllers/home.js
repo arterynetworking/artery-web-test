@@ -1,9 +1,10 @@
 /* home controller */
-app.controller("HomeController", ["$scope", "$location", "$anchorScroll",
-    function ($scope, $location, $anchorScroll) {
-
+app.controller("HomeController", ["$scope", "smoothScroll",
+    function ($scope, smoothScroll) {
+        
         $scope.goToTickets = function () {
-            $location.hash("tickets");
-            $anchorScroll();
+            
+            var element = document.getElementById("tickets");
+            smoothScroll(element);
         }
     }]);

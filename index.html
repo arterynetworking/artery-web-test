@@ -8,6 +8,7 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/1.0.3/ui-bootstrap.min.js"></script>
     <script type="text/javascript" src="js/controllers/global.js"></script>
+    <script type="text/javascript" src="js/lib/angular-smooth-scroll.js"></script>
     <script type="text/javascript" src="js/controllers/main.js"></script>
     <script type="text/javascript" src="js/controllers/home.js"></script>
     <script type="text/javascript" src="js/controllers/attending.js"></script>
@@ -29,10 +30,12 @@
     <div class="loading-overlay" ng-show="isLoading"></div>
 
     <!-- Navbar -->
-    <nav class="navbar navbar-fixed-top" ng-class="{ 'navbar-hide': hideNav }">
+    <nav class="navbar navbar-fixed-top">
         <div class="container">
             <div class="navbar-brand">
-                <a ng-click="goToPage('/home')">Artery</a>
+                <a ng-click="goToPage('/home')">
+                    ARTery
+                </a>
             </div>
 
             <ul class="nav navbar-nav navbar-right">
