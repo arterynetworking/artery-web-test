@@ -281,7 +281,6 @@ section.hero {
 section.hero h1,
 section.hero h2 {
     font-family: $font-body;
-    text-shadow: 0 6px 20px #000;
 }
 
 section.hero h1 {
@@ -291,7 +290,8 @@ section.hero h1 {
     margin: 4em 0 0;
     display: inline-block;
     text-transform: none;
-    font-weight: 800;
+    -webkit-text-stroke-width: 0.75px;
+    -webkit-text-stroke-color: white;
 }
 
 section.hero h1 .highlight {
@@ -302,6 +302,7 @@ section.hero h2 {
     text-transform: none;
     line-height: 2em;
     font-weight: 400;
+    text-shadow: 0 6px 20px #000;
 }
 
 /* Drawcards */

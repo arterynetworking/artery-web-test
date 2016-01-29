@@ -214,8 +214,7 @@ section.hero {
 
 section.hero h1,
 section.hero h2 {
-  font-family: "Poly", serif;
-  text-shadow: 0 6px 20px #000; }
+  font-family: "Poly", serif; }
 
 section.hero h1 {
   font-size: 4em;
@@ -224,7 +223,8 @@ section.hero h1 {
   margin: 4em 0 0;
   display: inline-block;
   text-transform: none;
-  font-weight: 800; }
+  font-weight: 800;
+  text-shadow: 0 0 2px #fff; }
 
 section.hero h1 .highlight {
   color: #C62828; }
@@ -232,7 +232,8 @@ section.hero h1 .highlight {
 section.hero h2 {
   text-transform: none;
   line-height: 2em;
-  font-weight: 400; }
+  font-weight: 400;
+  text-shadow: 0 6px 20px #000; }
 
 /* Drawcards */
 .drawcards {
