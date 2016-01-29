@@ -207,7 +207,7 @@ section.alt h2 {
 
 /* Hero Section */
 section.hero {
-  background: #01579B url("../images/networking.jpg") center center no-repeat;
+  background: #101010 url("../images/networking.jpg") center center no-repeat;
   background-size: cover;
   height: 100%;
   padding: 2em; }
@@ -223,8 +223,8 @@ section.hero h1 {
   margin: 4em 0 0;
   display: inline-block;
   text-transform: none;
-  font-weight: 800;
-  text-shadow: 0 0 2px #fff; }
+  -webkit-text-stroke-width: 0.75px;
+  -webkit-text-stroke-color: white; }
 
 section.hero h1 .highlight {
   color: #C62828; }
