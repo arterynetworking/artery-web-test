@@ -16,9 +16,9 @@ app.controller("MainController", ["$scope", "$window", "$location",
 
             if ($location.url() !== "") {
                 $scope.goToPage($location.url());
-                $scope.$apply();
             } else {
                 $scope.templateUrl = $scope.defaultPage;
+                $scope.$apply();
             }
         }
 
