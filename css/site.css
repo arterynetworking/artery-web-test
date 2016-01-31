@@ -1,4 +1,5 @@
 /* Colors */
+/*#C62828;*/
 /* Fonts */
 /* Other constants */
 /* General */
@@ -11,7 +12,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Montserrat", serif;
+  font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.05em; }
 
@@ -106,12 +107,16 @@ a {
   background: #101010;
   padding: 8px 0;
   margin: 0;
-  height: 65px; }
+  height: 65px;
+  transform: translateY(0); }
+
+.navbar.navbar-hide {
+  transform: translateY(-65px); }
 
 .navbar .navbar-brand {
   text-align: left;
   font-size: 1.6em;
-  font-family: "Montserrat", serif;
+  font-family: "Lobster", serif;
   letter-spacing: 0.05em; }
 
 .navbar .navbar-brand a {
@@ -127,23 +132,23 @@ a {
 
 /* Buttons */
 .btn {
-  font-family: "Montserrat", serif;
+  font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
   border-radius: 16px;
   border-width: 3px; }
 
 .btn-primary {
   color: #ffffff;
-  background: #01579B;
-  border-color: #013b68; }
+  background: #303030;
+  border-color: #171717; }
 
 .btn-primary:hover,
 .btn-primary:focus,
 .btn-primary:active,
 .btn-primary:active:focus,
 .btn-primary:active:hover {
-  background: #013b68;
-  border-color: #001e36;
+  background: #171717;
+  border-color: black;
   box-shadow: none; }
 
 .btn-xl {
@@ -212,22 +217,15 @@ section.hero {
   height: 100%;
   padding: 2em; }
 
-section.hero h1,
-section.hero h2 {
-  font-family: "Poly", serif; }
-
 section.hero h1 {
-  font-size: 4em;
+  font-family: "Lobster", serif;
+  font-size: 6em;
   width: auto;
   max-height: 90%;
-  margin: 4em 0 0;
+  margin: 2.25em 0 0;
   display: inline-block;
   text-transform: none;
-  -webkit-text-stroke-width: 0.75px;
-  -webkit-text-stroke-color: white; }
-
-section.hero h1 .highlight {
-  color: #C62828; }
+  color: #ffffff; }
 
 section.hero h2 {
   text-transform: none;
@@ -403,7 +401,7 @@ ul.list-bubbles li {
 
 .attendee-card .name {
   font-size: 1.4em;
-  font-family: "Montserrat", serif;
+  font-family: "Montserrat", sans-serif;
   text-transform: uppercase; }
 
 .attendee-card .occupation {
