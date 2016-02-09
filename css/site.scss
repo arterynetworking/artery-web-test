@@ -1,6 +1,6 @@
 /* Colors */
 
-$black: #101010;
+$black: #000000;
 $dark: #303030;
 $light: #fefefe;
 $white: #ffffff;
@@ -146,7 +146,6 @@ a {
 .navbar {
     color: $light;
     background: $black;
-    padding: 8px 0;
     margin: 0;
     height: 65px;
     transform: translateY(0);
@@ -161,6 +160,11 @@ a {
     font-size: 1.6em;
     font-family: $font-display;
     letter-spacing: 0.05em;
+    padding: 0;
+}
+
+.navbar-brand img {
+    height: 65px;
 }
 
 .navbar .navbar-brand a {
@@ -170,6 +174,8 @@ a {
 
 .navbar .navbar-nav > li > a {
     color: $light;
+    padding-top: 22px;
+    padding-bottom: 22px;
 }
 
 .navbar .navbar-nav > li > a:hover {

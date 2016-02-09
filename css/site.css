@@ -104,8 +104,7 @@ a {
 
 .navbar {
   color: #fefefe;
-  background: #101010;
-  padding: 8px 0;
+  background: #000000;
   margin: 0;
   height: 65px;
   transform: translateY(0); }
@@ -117,14 +116,20 @@ a {
   text-align: left;
   font-size: 1.6em;
   font-family: "Lobster", serif;
-  letter-spacing: 0.05em; }
+  letter-spacing: 0.05em;
+  padding: 0; }
+
+.navbar-brand img {
+  height: 65px; }
 
 .navbar .navbar-brand a {
   text-decoration: none;
   color: #fefefe; }
 
 .navbar .navbar-nav > li > a {
-  color: #fefefe; }
+  color: #fefefe;
+  padding-top: 22px;
+  padding-bottom: 22px; }
 
 .navbar .navbar-nav > li > a:hover {
   background: none;
@@ -181,7 +186,7 @@ footer a:hover {
 section:first-child,
 section:last-child {
   color: #fefefe;
-  background: #101010; }
+  background: #000000; }
 
 section.alt {
   background: #ece8e0; }
@@ -212,7 +217,7 @@ section.alt h2 {
 
 /* Hero Section */
 section.hero {
-  background: #101010 url("../images/networking.jpg") center center no-repeat;
+  background: #000000 url("../images/networking.jpg") center center no-repeat;
   background-size: cover;
   height: 100%;
   padding: 2em; }
