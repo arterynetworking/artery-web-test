@@ -211,6 +211,9 @@ footer,
 footer .box-outer {
   min-height: 475px; }
 
+footer .box-outer {
+  align-items: flex-start; }
+
 footer ul > li {
   margin: 0.4em 0; }
 
