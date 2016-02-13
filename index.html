@@ -26,21 +26,25 @@
 </head>
 
 <body ng-controller="MainController" scroll>
-    
+
     <!-- Loading Overlay -->
     <div class="loading-overlay" ng-show="isLoading"></div>
 
     <!-- Navbar -->
-    <nav class="navbar navbar-fixed-top" ng-class="{ 'navbar-hide': hideNav }">
+    <nav class="navbar navbar-fixed-top">
+        <!--ng-class="{ 'navbar-hide': hideNav }">-->
+        
+        <div class="navbar-brand">
+            <a ng-click="goToPage('/home')">
+                <img src="./images/logo.png" />
+            </a>
+        </div>
+        
         <div class="container">
-            <div class="navbar-brand">
-                <a ng-click="goToPage('/home')">
-                    <img src="./images/logo.png" />
-                </a>
-            </div>
-
-            <ul class="nav navbar-nav navbar-right">
+            <ul class="nav navbar-nav navbar-left">
                 <li><a ng-click="goToPage('/faq')">FAQs</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
                 <li><a ng-click="goToPage('/contact')">Contact</a></li>
             </ul>
         </div>
@@ -58,8 +62,10 @@
                 <div class="box-inner">
                     <h3>About ARTery</h3>
                     <p>
-                        An innovative Perth based networking and events group that encourages the discovery of not only the brand, but the person and face behind that.
+                        An innovative Perth based networking and events group that encourages the discovery of not only the brand, but the person
+                        and face behind that.
                     </p>
+                    <p>&copy; 2016 - ARTery Networking and Events</p>
                 </div>
                 <div class="box-inner">
                     <h3>Helpful Links</h3>
@@ -80,7 +86,6 @@
                     </ul>
                 </div>
             </div>
-            <p>&copy; 2016 - ARTery Networking and Events</p>
         </div>
     </footer>
 </body>

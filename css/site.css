@@ -41,14 +41,6 @@ article {
   width: 100%;
   min-height: 100%; }
 
-article:after {
-  content: "";
-  display: block; }
-
-article:after,
-footer {
-  height: 475px; }
-
 h1,
 h2,
 h3,
@@ -117,9 +109,24 @@ a {
   font-size: 1.6em;
   font-family: "Lobster", serif;
   letter-spacing: 0.05em;
-  padding: 0; }
+  padding: 0;
+  position: absolute;
+  width: 100%;
+  text-align: center; }
+
+.navbar .navbar-left,
+.navbar .navbar-right {
+  position: absolute;
+  float: none !important; }
+
+.navbar .navbar-left {
+  left: calc(50% + 150px); }
+
+.navbar .navbar-right {
+  right: calc(50% + 150px); }
 
 .navbar-brand img {
+  padding-top: 7px;
   height: 65px; }
 
 .navbar .navbar-brand a {
@@ -160,6 +167,28 @@ a {
   font-size: 24px;
   padding: 17px 45px; }
 
+/* Box for Vertical Align */
+.box-outer {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 750px; }
+
+.box-inner {
+  margin: 3em;
+  width: 100%; }
+
+.container,
+.box-inner {
+  max-width: 1100px; }
+
 /* Equally sized sections */
 section,
 footer {
@@ -172,6 +201,15 @@ footer {
   color: #fefefe;
   background: #303030 url("../images/footer.jpg") center center no-repeat;
   background-size: cover; }
+
+article:after {
+  content: "";
+  display: block; }
+
+article:after,
+footer,
+footer .box-outer {
+  min-height: 475px; }
 
 footer ul > li {
   margin: 0.4em 0; }
@@ -194,49 +232,29 @@ section.alt {
 section.alt h2 {
   color: #b4966b; }
 
-/* Box for Vertical Align */
-.box-outer {
-  width: 100%;
-  height: 100%;
-  padding: 0;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  align-items: top;
-  justify-content: center; }
-
-.box-inner {
-  margin: 3em;
-  width: 100%; }
-
-.container,
-.box-inner {
-  max-width: 1100px; }
-
 /* Hero Section */
 section.hero {
-  background: #000000 url("../images/networking.jpg") center center no-repeat;
-  background-size: cover;
-  height: 100%;
   padding: 2em; }
 
 section.hero h1 {
   font-family: "Lobster", serif;
   font-size: 6em;
-  width: auto;
-  max-height: 90%;
-  margin: 2.25em 0 0;
+  margin: 1em 0;
   display: inline-block;
   text-transform: none;
-  color: #ffffff; }
+  color: #ffffff;
+  letter-spacing: -2px; }
 
 section.hero h2 {
   text-transform: none;
   line-height: 2em;
   font-weight: 400;
   text-shadow: 0 6px 20px #000; }
+
+/* Who's Attending Section */
+section.whos-attending {
+  background: #ffffff url("../images/leaves.png") center center no-repeat;
+  background-size: cover; }
 
 /* Drawcards */
 .drawcards {
@@ -322,6 +340,13 @@ ul.list-bubbles li {
   margin: 1em 1.5em; }
 
 /* Tickets */
+section.buy-tickets {
+  background: #000000 url("../images/networking.jpg") center center no-repeat;
+  background-size: cover; }
+
+section.buy-tickets h2 {
+  color: #ffffff; }
+
 .tickets {
   width: 100%;
   height: 100%;
