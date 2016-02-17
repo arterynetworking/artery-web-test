@@ -151,23 +151,8 @@ a {
     font-family: $font-display;
     letter-spacing: 0.05em;
     padding: 0;
-    position: absolute;
     width: 100%;
     text-align: center;
-}
-
-.navbar .navbar-left,
-.navbar .navbar-right {
-    position: absolute;
-    float: none !important;
-}
-
-.navbar .navbar-left {
-    left: calc(50% + 150px);
-}
-
-.navbar .navbar-right {
-    right: calc(50% + 150px);
 }
 
 .navbar-brand img {
@@ -309,6 +294,21 @@ section.alt h2 {
 
 section.hero {
     padding: 2em;
+    background: #000 url('../images/hero.png') center center no-repeat; 
+}
+
+section.hero h1,
+section.hero h2 {
+    
+    /* BECAUSE FUCK YOU, THATS WHY */
+    text-shadow: 
+        0 6px 20px #000, 
+        0 0 150px #000, 
+        0 0 150px #000, 
+        0 0 150px #000, 
+        0 0 150px #000, 
+        0 0 150px #000, 
+        0 0 150px #000;
 }
 
 section.hero h1 {
@@ -325,7 +325,6 @@ section.hero h2 {
     text-transform: none;
     line-height: 2em;
     font-weight: 400;
-    text-shadow: 0 6px 20px #000;
 }
 
 /* Who's Attending Section */
