@@ -18,7 +18,7 @@ h6 {
 
 html,
 body {
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.7em;
   padding: 0;
   margin: 0;
@@ -152,7 +152,7 @@ a {
   box-shadow: none; }
 
 .btn-xl {
-  font-size: 24px;
+  font-size: 1em;
   padding: 17px 45px; }
 
 /* Box for Vertical Align */
@@ -167,7 +167,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 750px; }
+  min-height: 450px; }
 
 .box-inner {
   margin: 3em;
@@ -226,20 +226,15 @@ section.alt h2 {
 /* Hero Section */
 section.hero {
   padding: 2em;
-  background: #000 url("../images/hero.png") center center no-repeat; }
-
-section.hero h1,
-section.hero h2 {
-  /* BECAUSE FUCK YOU, THATS WHY */
-  text-shadow: 0 6px 20px #000,  0 0 150px #000,  0 0 150px #000,  0 0 150px #000,  0 0 150px #000,  0 0 150px #000,  0 0 150px #000; }
+  background: #fff url("../images/leaves.png") center center no-repeat;
+  color: #000000; }
 
 section.hero h1 {
   font-family: "Lobster", serif;
   font-size: 6em;
-  margin: 1em 0;
+  margin: 0.5em 0;
   display: inline-block;
   text-transform: none;
-  color: #ffffff;
   letter-spacing: -2px; }
 
 section.hero h2 {
@@ -274,6 +269,9 @@ section.whos-attending {
   height: 100%;
   z-index: 100;
   box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19), 0 8px 17px 0 rgba(0, 0, 0, 0.2); }
+
+.drawcard.vip {
+  font-size: 1.25em; }
 
 .drawcard:first-child,
 .drawcard:last-child {
