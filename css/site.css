@@ -13,8 +13,8 @@ h4,
 h5,
 h6 {
   font-family: "Montserrat", sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 0.05em; }
+  letter-spacing: 0.05em;
+  font-weight: 400; }
 
 html,
 body {
@@ -37,17 +37,12 @@ article {
   display: block;
   padding: 0;
   margin: 0;
-  margin-bottom: -475px;
+  margin-bottom: -400px;
   width: 100%;
   min-height: 100%; }
 
 h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: 400;
+h2 {
   text-transform: uppercase; }
 
 h1 {
@@ -197,7 +192,7 @@ article:after {
 article:after,
 footer,
 footer .box-outer {
-  min-height: 475px; }
+  min-height: 400px; }
 
 footer .box-outer {
   align-items: flex-start; }
@@ -241,6 +236,9 @@ section.hero h2 {
   text-transform: none;
   line-height: 2em;
   font-weight: 400; }
+
+.capitalize {
+  text-transform: uppercase !important; }
 
 /* Who's Attending Section */
 section.whos-attending {

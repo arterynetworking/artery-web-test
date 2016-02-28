@@ -18,8 +18,8 @@ $font-display: "Lobster", serif;
 
 /* Other constants */
 
-$footer-height: 475px;
-$footer-height-negative: -475px;
+$footer-height: 400px;
+$footer-height-negative: -400px;
 
 /* General */
 
@@ -34,8 +34,8 @@ h4,
 h5,
 h6 {
     font-family: $font-heading;
-    text-transform: uppercase;
     letter-spacing: 0.05em;
+    font-weight: 400;
 }
 
 html,
@@ -68,12 +68,7 @@ article {
 }
 
 h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-weight: 400;
+h2 {    
     text-transform: uppercase;
 }
 
@@ -311,6 +306,10 @@ section.hero h2 {
     text-transform: none;
     line-height: 2em;
     font-weight: 400;
+}
+
+.capitalize {
+    text-transform: uppercase !important;
 }
 
 /* Who's Attending Section */
