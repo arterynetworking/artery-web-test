@@ -240,10 +240,8 @@ section.hero h2 {
 .capitalize {
   text-transform: uppercase !important; }
 
-/* Who's Attending Section */
-section.whos-attending {
-  background: #ffffff url("../images/leaves.png") center center no-repeat;
-  background-size: cover; }
+.whos-attending .box-inner {
+  margin-top: 0; }
 
 /* Drawcards */
 .drawcards {
