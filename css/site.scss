@@ -264,7 +264,8 @@ footer ul > li {
 }
 
 footer a,
-footer a:hover {
+footer a:hover,
+footer a:focus {
     color: $light;
     border-bottom: 1px solid;
     padding-bottom: 0.15em;

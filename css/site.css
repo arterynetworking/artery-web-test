@@ -201,7 +201,8 @@ footer ul > li {
   margin: 0.4em 0; }
 
 footer a,
-footer a:hover {
+footer a:hover,
+footer a:focus {
   color: #fefefe;
   border-bottom: 1px solid;
   padding-bottom: 0.15em;
