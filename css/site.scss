@@ -448,8 +448,8 @@ section.buy-tickets h2 {
 
 .ticket {
     background: $light;
-    padding: 1em;
-    line-height: 1.45em;
+    line-height: 1.6em;
+    padding: 2em;
     margin: 0;
     width: 100%;
     box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.16), 0 2px 5px 0 rgba(0, 0, 0, 0.26);
@@ -458,8 +458,20 @@ section.buy-tickets h2 {
 .ticket.vip {
     z-index: 100;
     font-size: 1.15em;
-    width: 150%;
+    width: 125%;
     box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19), 0 8px 17px 0 rgba(0, 0, 0, 0.2);
+}
+
+.ticket .btn strong {
+    color: darkred;
+}
+
+.ticket.vip .btn strong {
+    color: salmon;
+}
+
+.ticket h3 {
+    margin-top: 0;
 }
 
 .price {
@@ -474,9 +486,15 @@ section.buy-tickets h2 {
     margin: 1em 0;
 }
 
-.ticket-information {
+ul.ticket-information {
     width: 100%;
     padding: 0.5em 1em;
+    list-style: none;
+}
+
+ul.ticket-information li {
+    line-height: 1.3em;
+    margin: 0.5em 0;
 }
 
 /* Map */
