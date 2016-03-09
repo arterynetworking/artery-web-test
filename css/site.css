@@ -261,7 +261,7 @@ section.hero h2 {
 .drawcard {
   padding: 1.5em;
   background: #ffffff;
-  line-height: 1.45em;
+  line-height: 1.6em;
   width: 100%;
   height: 100%;
   z-index: 100;
@@ -366,11 +366,8 @@ section.buy-tickets h2 {
   width: 125%;
   box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19), 0 8px 17px 0 rgba(0, 0, 0, 0.2); }
 
-.ticket .btn strong {
+.ticket strong {
   color: darkred; }
-
-.ticket.vip .btn strong {
-  color: salmon; }
 
 .ticket h3 {
   margin-top: 0; }
