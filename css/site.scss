@@ -463,7 +463,9 @@ section.buy-tickets h2 {
 }
 
 .ticket strong {
+    display: block;
     color: darkred;
+    margin-bottom: 1em;
 }
 
 .ticket h3 {
